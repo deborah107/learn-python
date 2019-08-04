@@ -4,3 +4,4 @@ CREATE TABLE IF NOT EXISTS users (
     last_name varchar(255),
     dob timestamptz
 );
+
