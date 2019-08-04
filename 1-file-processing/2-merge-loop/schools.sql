@@ -11,3 +11,4 @@ CREATE TABLE IF NOT EXISTS user_schools (
     left timestamptz,
     PRIMARY key(user_id, school_id)
 );
+
