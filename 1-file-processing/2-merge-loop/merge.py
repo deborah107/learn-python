@@ -3,14 +3,14 @@ def merge():
     # - Save the file to `merged.sql`
     # provide implementation here
 
-    #print()
+    
 
     from os import listdir
     from os.path import isfile, join
     onlyfiles = [f for f in listdir("sqls") if isfile(join("sqls", f))]
+    print(onlyfiles)
 
-    files = ['schools.sql','users.sql']
     with open('merged.sql', 'w') as outfile:
-        for fname in files:
-            with open(fname) as infile:
+        for fname in onlyfiles:
+            with open(join("sqls", fname)) as infile:
                 outfile.write(infile.read())
